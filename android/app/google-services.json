@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "648378989072",
+    "project_id": "ecfile-5d",
+    "storage_bucket": "ecfile-5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:648378989072:android:9e3dcebe00a8f20a0be895",
+        "android_client_info": {
+          "package_name": "com.example.ifa_ecfile_solution"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "648378989072-skrbutceqlrl1aa3foiurcr0mc1ioa20.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5xnmj83RBxTyD1BR_-uisuM0Gk3g-lPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "648378989072-skrbutceqlrl1aa3foiurcr0mc1ioa20.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
