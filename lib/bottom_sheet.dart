@@ -49,6 +49,7 @@ class _BottomTabsState extends State<BottomTabs> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       TabBar(
+                        unselectedLabelColor: Colors.black26,
                         tabs: [
                           Row(
                             children: [
@@ -228,9 +229,12 @@ class _BottomTabsState extends State<BottomTabs> {
                                         color: Colors.red[400],
                                         child: Text('Delete'),
                                         onPressed: () {
-                                          final docItem = FirebaseFirestore.instance.collection('grocery').doc('54ZVKAU0iljt1jrdkQb2');
-                                                 
-                                                 docItem.delete();
+                                          final docItem = FirebaseFirestore
+                                              .instance
+                                              .collection('grocery')
+                                              .doc('id-107');
+
+                                          docItem.delete();
                                         },
                                       )
                                     ],
@@ -318,12 +322,17 @@ class _BottomTabsState extends State<BottomTabs> {
                                   RaisedButton(
                                     color: Colors.cyan,
                                     child: Text(
-                                      'Re-ADD',
+                                      'ADD',
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontSize: 20.0),
                                     ),
                                     onPressed: () {
+                                      final docItem = FirebaseFirestore.instance
+                                          .collection('grocery')
+                                          .doc();
+
+                                      // docItem.update();
                                       Navigator.pop(context);
                                     },
                                   ),
@@ -346,7 +355,7 @@ class _BottomTabsState extends State<BottomTabs> {
 
   Future createItem(GroceryList grocerys) async {
     final docItem =
-        FirebaseFirestore.instance.collection('grocery').doc('id-112');
+        FirebaseFirestore.instance.collection('grocery').doc('id-113');
     grocerys.id = docItem.id;
 
     final json = grocerys.tojson();
